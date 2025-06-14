@@ -1,0 +1,38 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// Color variables
+$white: #fcfcfc;
+$black: #000000;
+$bg-header: #00b0f5;
+$bg-footer: #00b0f5;
+
+// Overriding Vuetify global styles
+@use 'vuetify' as *;
+
+:root {
+  --white: #{$white};
+  --black: #{$black};
+  --bg-header: #{$bg-header};
+  --bg-footer: #{$bg-footer};
+}
+
+html,
+body {
+  background-color: $white;
+}
+
+.bg-header {
+  background-color: $bg-header;
+}
+
+.bg-footer {
+  background-color: $bg-footer;
+}
+
+.text-blue {
+  color: $bg-header;
+}
